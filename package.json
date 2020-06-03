@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "concurrently -k  -n COMPILER...,NODEMON -c yellow,green  \"tsc -w\" \"nodemon -w dist -q dist/robots.js\""
+    "dev": "concurrently -k  -n COMPILER...,NODEMON -c yellow,green  \"tsc -w\" \"nodemon -w dist -q dist/index.js\""
   },
   "author": "",
   "license": "ISC",

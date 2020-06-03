@@ -1,8 +1,10 @@
-import multiply, { multiplyByTwo as mB2 } from "./multiply";
+import { ShoppingCart } from "./lib/shopping-cart";
+import { calculateTotalAmount } from "./lib/calculate-total-amount";
+import { Order } from "./lib/order";
 
-const a = 59;
-const b = 2;
+const cart = new ShoppingCart();
 
-console.log(`${a} * ${b} = ${multiply(a, b)}`);
+console.log(`The cart's total is ${calculateTotalAmount(cart)}`);
 
-console.log(`mb2 ${2} =  ${mB2(2)}`);
+const order = new Order();
+console.log("order :>> ", calculateTotalAmount(order));

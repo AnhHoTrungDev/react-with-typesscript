@@ -1,5 +1,7 @@
+//interface
 export interface IOrder {
   calculateTotal(): number;
+  products?: Array<any>;
 }
 
 export function calculateTotalAmount(order: IOrder) {
