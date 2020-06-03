@@ -1,0 +1,17 @@
+{
+  "name": "simple-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "concurrently -k  -n COMPILER...,NODEMON -c yellow,green  \"tsc -w\" \"nodemon -w dist -q dist/robots.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "typecript": "0.0.1-security"
+  }
+}
