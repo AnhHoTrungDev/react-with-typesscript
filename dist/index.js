@@ -1,9 +1,29 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const shopping_cart_1 = require("./lib/shopping-cart");
-const calculate_total_amount_1 = require("./lib/calculate-total-amount");
-const order_1 = require("./lib/order");
-const cart = new shopping_cart_1.ShoppingCart();
-console.log(`The cart's total is ${calculate_total_amount_1.calculateTotalAmount(cart)}`);
-const order = new order_1.Order();
-console.log("order :>> ", calculate_total_amount_1.calculateTotalAmount(order));
+class Cat {
+    constructor(name) {
+        this.name = name;
+    }
+    setGroup(group) {
+        this.group = group;
+    }
+}
+class Dog {
+    constructor(name) {
+        this.name = name;
+    }
+    setGroup(group) {
+        this.group = group;
+    }
+    bark() { }
+}
+function initializeAnimal(Animal, name) {
+    const animal = new Animal(name);
+    //   animal.name
+    animal.setGroup("mamals");
+    return animal;
+}
+const cat = initializeAnimal(Cat, "meow");
+const dog = initializeAnimal(Dog, "Bo");
+dog.bark();
+console.log("cat :>> ", cat);
+console.log("dog :>> ", dog);
