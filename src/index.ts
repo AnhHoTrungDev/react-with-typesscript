@@ -1,5 +1,4 @@
 console.log("run =>> index...");
-import { expiredChocolateCakes, expiredVanillaCakes } from "./generics";
+import { result } from "./intersection-Type";
 
-console.log("expiredChocolateCakes :>> ", expiredChocolateCakes);
-console.log("expiredVanillaCakes :>> ", expiredVanillaCakes);
+console.log("result :>> ", result);
