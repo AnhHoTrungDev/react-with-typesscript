@@ -1,4 +1,5 @@
-console.log("run =>> index...");
-import { result } from "./intersection-Type";
+// import { salad } from "./declaration-merging";
 
-console.log("result :>> ", result);
+// console.log("run =>> index...");
+
+// console.log("result :>> ", rs);
