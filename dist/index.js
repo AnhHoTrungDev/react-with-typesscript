@@ -1,29 +1,6 @@
 "use strict";
-class Cat {
-    constructor(name) {
-        this.name = name;
-    }
-    setGroup(group) {
-        this.group = group;
-    }
-}
-class Dog {
-    constructor(name) {
-        this.name = name;
-    }
-    setGroup(group) {
-        this.group = group;
-    }
-    bark() { }
-}
-function initializeAnimal(Animal, name) {
-    const animal = new Animal(name);
-    //   animal.name
-    animal.setGroup("mamals");
-    return animal;
-}
-const cat = initializeAnimal(Cat, "meow");
-const dog = initializeAnimal(Dog, "Bo");
-dog.bark();
-console.log("cat :>> ", cat);
-console.log("dog :>> ", dog);
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log("run =>> index...");
+const generics_1 = require("./generics");
+console.log("expiredChocolateCakes :>> ", generics_1.expiredChocolateCakes);
+console.log("expiredVanillaCakes :>> ", generics_1.expiredVanillaCakes);

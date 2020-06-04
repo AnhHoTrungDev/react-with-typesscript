@@ -1,50 +1,5 @@
-interface Animal {
-  name: string;
-  group: string | undefined;
-  setGroup(group: string): void;
-}
+console.log("run =>> index...");
+import { expiredChocolateCakes, expiredVanillaCakes } from "./generics";
 
-class Cat implements Animal {
-  name: string;
-  group: string | undefined;
-  constructor(name: string) {
-    this.name = name;
-  }
-
-  setGroup(group: string) {
-    this.group = group;
-  }
-}
-
-class Dog implements Animal {
-  name: string;
-  group: string | undefined;
-  constructor(name: string) {
-    this.name = name;
-  }
-  setGroup(group: string) {
-    this.group = group;
-  }
-  bark() {}
-}
-
-interface AnimalConstructor<T> {
-  new (name: string): T;
-}
-
-function initializeAnimal<T extends Animal>(
-  Animal: AnimalConstructor<T>,
-  name: string
-) {
-  const animal = new Animal(name);
-  //   animal.name
-  animal.setGroup("mamals");
-  return animal;
-}
-
-const cat = initializeAnimal(Cat, "meow");
-const dog = initializeAnimal(Dog, "Bo");
-dog.bark();
-
-console.log("cat :>> ", cat);
-console.log("dog :>> ", dog);
+console.log("expiredChocolateCakes :>> ", expiredChocolateCakes);
+console.log("expiredVanillaCakes :>> ", expiredVanillaCakes);
