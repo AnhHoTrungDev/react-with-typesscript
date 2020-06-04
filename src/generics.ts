@@ -27,7 +27,7 @@ class GenericClass<P> {
   }
 
   // ko dung dc P cho cac static
-  //   static A: P;
+    // static A: P;
   //   static someMethod(p:P) {
 
   //   }
